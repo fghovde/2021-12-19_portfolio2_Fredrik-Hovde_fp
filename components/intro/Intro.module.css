@@ -1,0 +1,11 @@
+.logo {
+    max-width: 1024px;
+}
+.logoContainer {
+    position: fixed;
+    padding: 6%;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
+}

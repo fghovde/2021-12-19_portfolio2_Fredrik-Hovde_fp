@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import { AppWrapper } from '../context/state';
+import Layout from '../components/layout/Layout';
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyGame({ Component, pageProps }) {
+  return (
+    <AppWrapper>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AppWrapper>
+  )
 }
 
-export default MyApp
+export default MyGame
